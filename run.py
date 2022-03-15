@@ -23,17 +23,25 @@ def game():
     alphabet = set(string.ascii_uppercase)
     guessed_letters = set()
 
-    while len(mystery_letters) > 0
-        user_guess = input("Enter a letter to check if it is in the mystery word.")
-        if user_guess in alphabet - guessed_letters:
-            guessed_letters.append(user_guess)
-            if user_guess in mystery_letters:
-                mystery_letters.remove(user_guess)
+    while len(mystery_letters) > 0:
 
-        elif user_guess in guessed_letters:
+        print("Letters guessed = ", " ".join(guessed_letters))
+
+    #display current mystery word
+    mystery_word_display = [letter if letter in guessed_letters else ' _ ' for letter in mystery_word]
+    print("Mystery Word = ", " ".join(mystery_word_display))
+
+
+    user_guess = input("Enter a letter to check if it is in the mystery word.")
+    if user_guess in alphabet - guessed_letters:
+            guessed_letters.append(user_guess)
+    if user_guess in mystery_letters:
+            mystery_letters.remove(user_guess)
+
+    elif user_guess in guessed_letters:
             print("You've already guessed that letter, please try again.")
 
-        else: 
+    else: 
         print("Invalid character entered, please enter a leter from a to z.")
 
 
