@@ -31,12 +31,12 @@ def game():
                 mystery_letters.remove(user_guess)
 
         elif user_guess in guessed_letters:
-            print("You;ve already guessed that letter, please try again.")
+            print("You've already guessed that letter, please try again.")
 
         else: 
         print("Invalid character entered, please enter a leter from a to z.")
 
-    
+
 
 
 user_input = input("Type something:")
