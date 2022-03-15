@@ -3,8 +3,8 @@ Hangman
 """
 # Install repository of available words
 import random
-from allwords import possible_words
-import string
+# from allwords import possible_words
+possible_words = ['apple', 'banana', 'pears']
 
 
 # Welcome user and ask for input of first name
@@ -23,27 +23,22 @@ mystery_word = random.choice(possible_words)
 mystery_letters = list(mystery_word)
 wrong_letters = []
 
-print()
-print("The word has {} letters".format(len(mystery_letters)))
-
 while wrong_answers < number_of_lives:
-        print()
-        print("wrong letters: ", end="")
+        print("Incorrect answers so far = ", end="")
         for letter in wrong_letters:
                 print("{}, ".format(letter), end="")
         
-        print("Guesses left: {}".format(number_of_lives - wrong_answers))
+        print("Lives remaining = : {}".format(number_of_lives - wrong_answers))
         user_guess = input("Enter a letter to check if it is in the mystery word.")
 
         while user_guess in guessed_letters or user_guess in wrong_letters:
-                print()
                 print("You've already guessed that letter, please try again.")
                 user_guess = input("Enter a letter to check if it is in the mystery word.")
 
         if user_guess not in mystery_letters:
                 wrong_answers += 1
+
                 wrong_letters.append(user_guess)
-        
 
         print("MYSTERY Word = ", end="")
 
@@ -55,7 +50,7 @@ while wrong_answers < number_of_lives:
                 if letter in guessed_letters:
                         print(letter + " ", end="")
                 else:
-                        print("_", end="")
+                        print(" _ ", end="")
 
         print(number_of_lives)
 
@@ -65,15 +60,6 @@ while wrong_answers < number_of_lives:
 
 if wrong_answers == number_of_lives:
         print("You have lost the game, why not try again")
-
-        
-
-
-
-
-
-
-
 
 
 
