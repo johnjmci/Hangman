@@ -1,5 +1,6 @@
 import random
 from allwords import possible_words
+possible_words = [x.upper() for x in possible_words]
 import string
 
 
@@ -19,6 +20,7 @@ print()
 input('Press any key to continue.')
 print()
 
+possible_words = possible_words
 wrong_answers = 0
 guessed_letters = []
 number_of_lives = 7
@@ -38,7 +40,7 @@ while wrong_answers < number_of_lives:
                 print('{}, '.format(letter), end='')
         print('* Lives remaining: {}'.format(number_of_lives - wrong_answers))
         print()
-        user_guess = input('--->>  Enter a letter to check if it is in the mystery word...').upper()
+        user_guess = input('--->>  Enter a letter to check if it is in the mystery word...')
 
 
 
@@ -51,7 +53,7 @@ while wrong_answers < number_of_lives:
 
         while user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already made that guess, please try again')
-                user_guess = input('--->>  Enter a letter to check if it is in the mystery word...').upper()
+                user_guess = input('--->>  Enter a letter to check if it is in the mystery word...')
 
         if user_guess not in mystery_letters:
                 wrong_answers += 1
