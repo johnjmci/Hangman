@@ -42,7 +42,7 @@ while wrong_answers < number_of_lives:
         print()
 
 
-        if number_of_lives == 7:
+        if number_of_lives == 0:
                         print("""
       _______
      |/      |
@@ -50,6 +50,103 @@ while wrong_answers < number_of_lives:
      |      \|/
      |       |
      |      / \\
+     |
+ ____|____
+ 
+ 
+ """)
+
+        if number_of_lives == 1:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      / 
+     |
+ ____|____
+ 
+ 
+ """)
+
+        if number_of_lives == 2:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      
+     |
+ ____|____
+ 
+ """)
+
+        if number_of_lives == 3:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|/
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+ """)
+
+        if number_of_lives == 4:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+ """)
+
+        if number_of_lives == 5:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |       |
+     |       
+     |     
+     |
+ ____|____
+ 
+ 
+ """)
+
+        if number_of_lives == 6:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |     
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+ """)
+
+        if number_of_lives == 7:
+                        print("""
+      _______
+     |/      |
+     |      
+     |      
+     |       
+     |      
      |
  ____|____
  
@@ -124,6 +221,5 @@ if wrong_answers == number_of_lives:
 #
 #       if input('Would you like to play again? Enter y or n.') == 'y':
 #                hangman()
-
 
 
