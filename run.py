@@ -47,8 +47,7 @@ while wrong_answers < number_of_lives:
         print('\n* Lives remaining: {}'.format(number_of_lives - wrong_answers))
         print()
 
-
-        if number_of_lives == 0:
+        if number_of_lives == 7:
                         print("""
       _______
      |/      |
@@ -61,122 +60,8 @@ while wrong_answers < number_of_lives:
  
  
  """)
-
-        if number_of_lives == 1:
-                        print("""
-      _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       |
-     |      / 
-     |
- ____|____
  
- 
- """)
-
-        if number_of_lives == 2:
-                        print("""
-      _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       |
-     |      
-     |
- ____|____
- 
- """)
-
-        if number_of_lives == 3:
-                        print("""
-      _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       
-     |      
-     |
- ____|____
- 
- 
- """)
-
-        if number_of_lives == 4:
-                        print("""
-      _______
-     |/      |
-     |      (_)
-     |      \|
-     |       
-     |      
-     |
- ____|____
- 
- 
- """)
-
-        if number_of_lives == 5:
-                        print("""
-      _______
-     |/      |
-     |      (_)
-     |       |
-     |       
-     |     
-     |
- ____|____
- 
- 
- """)
-
-        if number_of_lives == 6:
-                        print("""
-      _______
-     |/      |
-     |      (_)
-     |     
-     |       
-     |      
-     |
- ____|____
- 
- 
- """)
-
-        if number_of_lives == 7:
-                        print("""
-      _______
-     |/      |
-     |      
-     |      
-     |       
-     |      
-     |
- ____|____
- 
- 
- """)
-
         user_guess = input('--->>  Enter a letter to check if it is in the mystery word...').upper()
-
-#while user_guess not in alphabet:
-#             print('Invalid character entered, please enter a leter from a to z.')
-
-
-
-
-# Run code to check if the input is valid - a single letter character from a to z
-
-   ##     print("Invalid character entered, please enter a leter from a to z.")
-
-# while user_guess not in alphabet:
-#                print('Invalid character entered, please enter a leter from a to z.')
-
-
-
-
         if user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already made that guess, please try again')
                 user_guess = input('--->>  Enter a letter to check if it is in the mystery word...')
@@ -185,10 +70,6 @@ while wrong_answers < number_of_lives:
                 print('Invalid character entered!')
                 user_guess = input('--->>  lease enter a leter from a to z...')
         
-       
-
-
-
         if user_guess not in mystery_letters:
                 wrong_answers += 1
                 wrong_letters.append(user_guess)
@@ -206,13 +87,8 @@ while wrong_answers < number_of_lives:
                 else:
                         print('_ ', end='')
 
-
         print()
         
-
-        # If no lives remain then GAME OVER
-
-# If no letters remain then CONGRATULATIONS
 
         if len(guessed_letters) == len(mystery_letters):
                 print("""
@@ -223,6 +99,7 @@ __      _____ _  _ _  _ ___ ___ _
                 """)
                 print("You have won, well done!")
                 break
+
 
 if wrong_answers == number_of_lives:
         print("""
@@ -239,5 +116,23 @@ if wrong_answers == number_of_lives:
 #
 #       if input('Would you like to play again? Enter y or n.') == 'y':
 #                hangman()
+
+
+
+#while user_guess not in alphabet:
+#             print('Invalid character entered, please enter a leter from a to z.')
+
+
+
+
+# Run code to check if the input is valid - a single letter character from a to z
+
+   ##     print("Invalid character entered, please enter a leter from a to z.")
+
+# while user_guess not in alphabet:
+#                print('Invalid character entered, please enter a leter from a to z.')
+
+
+
 
 
