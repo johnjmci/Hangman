@@ -8,6 +8,12 @@ import string
 
 
 # Welcome user and ask for input of first name
+print("""
+ _  _   _   _  _  ___ __  __   _   _  _ 
+| || | /_\ | \| |/ __|  \/  | /_\ | \| |
+| __ |/ _ \| .` | (_ | |\/| |/ _ \| .` |
+|_||_/_/ \_\_|\_|\___|_|  |_/_/ \_\_|\_|
+""")
 print('Welcome to Hangman!\nThis is a fun word game, where you guess the letters of a mystery word.')
 print()
 print('In this version of the game, all words have six letters.')
@@ -38,7 +44,7 @@ while wrong_answers < number_of_lives:
         print()
         for letter in wrong_letters:
                 print('{}, '.format(letter), end='')
-        print('* Lives remaining: {}'.format(number_of_lives - wrong_answers))
+        print('\n* Lives remaining: {}'.format(number_of_lives - wrong_answers))
         print()
 
 
@@ -209,10 +215,22 @@ while wrong_answers < number_of_lives:
 # If no letters remain then CONGRATULATIONS
 
         if len(guessed_letters) == len(mystery_letters):
+                print("""
+__      _____ _  _ _  _ ___ ___ _ 
+\ \    / /_ _| \| | \| | __| _ \ |
+ \ \/\/ / | || .` | .` | _||   /_|
+  \_/\_/ |___|_|\_|_|\_|___|_|_(_)
+                """)
                 print("You have won, well done!")
                 break
 
 if wrong_answers == number_of_lives:
+        print("""
+  ___   _   __  __ ___    _____   _____ ___ _ 
+ / __| /_\ |  \/  | __|  / _ \ \ / / __| _ \ |
+| (_ |/ _ \| |\/| | _|  | (_) \ V /| _||   /_|
+ \___/_/ \_\_|  |_|___|  \___/ \_/ |___|_|_(_)
+        """)
         print("You have lost the game, why not try again")
 
 
