@@ -41,13 +41,11 @@ wrong_letters = []
 
 while wrong_answers < number_of_lives:
         print('* Incorrect answers so far: ', end='')
-        print()
         for letter in wrong_letters:
                 print('{}, '.format(letter), end='')
-        print('\n* Lives remaining: {}'.format(number_of_lives - wrong_answers))
-        print()
+        print('* Lives remaining: {}'.format(number_of_lives - wrong_answers))
 
-        if number_of_lives == 7:
+        if wrong_answers == 7:
                         print("""
       _______
      |/      |
@@ -59,7 +57,100 @@ while wrong_answers < number_of_lives:
  ____|____
  
  
- """)
+""")
+
+        if wrong_answers == 6:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      / 
+     |
+ ____|____
+ 
+ 
+""")
+        if wrong_answers == 5:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      
+     |
+ ____|____
+ 
+ 
+""")
+        if wrong_answers == 4:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|/
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+""")
+        if wrong_answers == 3:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |      \|
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+""")
+        if wrong_answers == 2:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |       |
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+""")
+        if wrong_answers == 1:
+                        print("""
+      _______
+     |/      |
+     |      (_)
+     |     
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+""")
+        if wrong_answers == 0:
+                        print("""
+      _______
+     |/      |
+     |     
+     |      
+     |       
+     |      
+     |
+ ____|____
+ 
+ 
+""")
+
  
         user_guess = input('--->>  Enter a letter to check if it is in the mystery word...').upper()
         if user_guess in guessed_letters or user_guess in wrong_letters:
