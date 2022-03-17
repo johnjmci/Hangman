@@ -18,12 +18,12 @@ print('Welcome to Hangman!\nThis is a fun word game, where you guess the letters
 print()
 print('In this version of the game, you have seven lives and all words have six letters.')
 print()
-username = input('Before we start, what should I call you? Plesae enter your first name... ').upper()
+username = input('Before we start, what should I call you? Plesae enter your first name... \n').upper()
 print()
 print('Hi',username, '! Best of luck')
 print()
 
-input('Press any key to continue.')
+input('Press any key to continue.\n')
 print()
 
 possible_words = possible_words
@@ -139,14 +139,14 @@ while wrong_answers < NUMBER_OF_LIVES:
 """)
 
  
-        user_guess = input('--->>  Enter a letter to check if it is in the mystery word...').upper()
+        user_guess = input('--->>  Enter a letter to check if it is in the mystery word...\n').upper()
         if user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already made that guess, please try again')
-                user_guess = input('--->>  Enter a letter to check if it is in the mystery word...')
+                user_guess = input('--->>  Enter a letter to check if it is in the mystery word...\n')
 
         if user_guess not in alphabet:
                 print('Invalid character entered!')
-                user_guess = input('--->>  lease enter a leter from a to z...')
+                user_guess = input('--->>  lease enter a leter from a to z...\n')
         
         if user_guess not in mystery_letters:
                 wrong_answers += 1
