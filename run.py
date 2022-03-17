@@ -16,7 +16,7 @@ print("""
 """)
 print('Welcome to Hangman!\nThis is a fun word game, where you guess the letters of a mystery word.')
 print()
-print('In this version of the game, all words have six letters.')
+print('In this version of the game, you have seven lives and all words have six letters.')
 print()
 username = input('Before we start, what should I call you? Plesae enter your first name... ').upper()
 print()
@@ -29,7 +29,7 @@ print()
 possible_words = possible_words
 wrong_answers = 0
 guessed_letters = []
-number_of_lives = 7
+NUMBER_OF_LIVES = 7
 alphabet = set(string.ascii_uppercase)
 mystery_word = random.choice(possible_words)
 mystery_letters = list(mystery_word)
@@ -39,25 +39,12 @@ wrong_letters = []
 # Display word skeleton and empty gallowes, request first letter guess
 
 
-while wrong_answers < number_of_lives:
+while wrong_answers < NUMBER_OF_LIVES:
         print('* Incorrect answers so far: ', end='')
         for letter in wrong_letters:
                 print('{}, '.format(letter), end='')
-        print('* Lives remaining: {}'.format(number_of_lives - wrong_answers))
+        print('* Lives remaining: {}'.format(NUMBER_OF_LIVES - wrong_answers))
 
-        if wrong_answers == 7:
-                        print("""
-      _______
-     |/      |
-     |      (_)
-     |      \|/
-     |       |
-     |      / \\
-     |
- ____|____
- 
- 
-""")
 
         if wrong_answers == 6:
                         print("""
@@ -192,8 +179,21 @@ __      _____ _  _ _  _ ___ ___ _
                 break
 
 
-if wrong_answers == number_of_lives:
+if wrong_answers == NUMBER_OF_LIVES:
         print("""
+
+**********************************************
+
+
+     _______
+     |/      |
+     |      (_)
+     |      \|/
+     |       |
+     |      / \\
+     |
+ ____|____
+
   ___   _   __  __ ___    _____   _____ ___ _ 
  / __| /_\ |  \/  | __|  / _ \ \ / / __| _ \ |
 | (_ |/ _ \| |\/| | _|  | (_) \ V /| _||   /_|
