@@ -53,7 +53,7 @@ while wrong_answers < NUMBER_OF_LIVES:
                 print('{}, '.format(letter), end='')
         print('* Lives remaining: {}\n'.format(NUMBER_OF_LIVES - wrong_answers))
 
-        user_guess = input('--> 1 Input a letter and press enter...\n').upper()
+        user_guess = input('--> Input a letter and press enter...\n').upper()
 
 
         if wrong_answers == 6:
@@ -152,15 +152,15 @@ while wrong_answers < NUMBER_OF_LIVES:
                 print('You already made that guess, please try again.')
                 user_guess = input('--> 2 Input a letter and press enter...\n').upper()
 
+        if user_guess not in alphabet:
+                        wrong_letters.append(user_guess)
+                        print('Invalid character entered!')
+                        user_guess = input('--> 3 Enter a letter a to z...\n').upper()
 
         if user_guess in alphabet and user_guess not in mystery_letters:
                 wrong_answers += 1
                 wrong_letters.append(user_guess)
 
-
-        if user_guess not in alphabet:
-                print('Invalid character entered!')
-                user_guess = input('--> 3 Enter a letter a to z...\n').upper()
         print()
 
         print('MYSTERY Word is ', end='')
