@@ -52,11 +52,10 @@ A letter contained witin the mystery word.
 
 ### Future Expansion & Build
 
-- Another feature idea
-- new word packs
-- difficulty
-- new game
-- leader board 
+Game has been created as intended and includes core functionality. Notes of future expansion and improvement areL
+- Option to add additonal lists of words. These could be themed by topic and even updated seasonally to coincide with holdays.  
+- Adding additional lists of words grouped by difficulty, incorporating the option for users to select whcih group they are served words from. 
+- Explore options around storing highest score against username. 
 
 ## Testing 
 
