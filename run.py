@@ -39,6 +39,9 @@ invalid_characters = []
 
 # Display word skeleton and empty gallowes, request first letter guess
 
+"""
+Base code to run so long as the game active ie the player still has lives remaining.
+"""
 
 while wrong_answers < NUMBER_OF_LIVES:
         print('* Incorrect answers so far: \n', end='')
@@ -48,7 +51,10 @@ while wrong_answers < NUMBER_OF_LIVES:
 
         user_guess = input('--> 1 Input a letter and press enter...\n').upper()
 
+"""
+Animations included to display based on the number of wrong answers reveived.
 
+"""
         if wrong_answers == 6:
                         print("""
       _______
@@ -141,10 +147,10 @@ while wrong_answers < NUMBER_OF_LIVES:
  
 """)
 
+"""
+Actions dealing with input answers from player. Checking if answer is a valid character and correct answer.
+"""
  
-       
-
-
         while user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already made that guess, please try again.')
                 user_guess = input('--> 2 Input a letter and press enter...\n').upper()
@@ -159,13 +165,13 @@ while wrong_answers < NUMBER_OF_LIVES:
                 print('Invalid character entered!')
                 user_guess = input('--> 3 Enter a letter a to z...\n').upper()
         
-       
-                       
+
+"""
+Display showing the user the make-up of the mystery word, which letters they have guessed and which remain.
+"""             
         print()
         print('MYSTERY Word is ', end='')
         print()
-## to check wheher next line still needed
-
 
         for letter in mystery_letters:
                 if user_guess == letter:
@@ -176,15 +182,12 @@ while wrong_answers < NUMBER_OF_LIVES:
                         print(letter + ' ', end='')
                 else:
                         print('_ ', end='')
-
-
-       
-       
        
         print()
         
-## will it add multiple times and throw off length of list
-
+"""
+Results message. Triggered when no lives remain and feedback to player whether they have won or lost. 
+"""
         if len(guessed_letters) == len(mystery_letters):
                 print("""
 __      _____ _  _ _  _ ___ ___ _ 
