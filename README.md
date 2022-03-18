@@ -12,7 +12,7 @@ This includes mapping of:
 - Instances where input needs to be evaluated for validity. 
 - Evaluation ot input and decisions on game progression or feedback to players. 
 
-![hangman_design_flow](https://user-images.githubusercontent.com/92268504/159022155-b9448577-6597-4259-9d2e-7bd7a1ed5b18.png)
+![lucid_hangman_0322](https://user-images.githubusercontent.com/92268504/159069402-f4627a4f-ee1b-4166-a2d5-900bd665c129.png)
 
 
 ## Features 
@@ -48,13 +48,14 @@ A letter contained witin the mystery word.
   - Once the number of correct letters is equal to the number of letters in the mystery word, this means that the complete word has been guessed and the player has won.   
  <img width="783" alt="play_screen_winner" src="https://user-images.githubusercontent.com/92268504/159038360-5b83c57d-69ef-4310-80d6-1aa786d234f6.png">
 
-  - In both instances, the player is served a feedback message and graphic informing them of their results. 
+  - In both instances, the player is served a feedback message and graphic informing them of their results. Currently it was decided to not reveal the answer to an incomplete game to a player when the game is over, this will increase the longevity of the current game content. 
 
 ### Future Expansion & Build
 
 Game has been created as intended and includes core functionality. Notes of future expansion and improvement areL
 - Option to add additonal lists of words. These could be themed by topic and even updated seasonally to coincide with holdays.  
 - Adding additional lists of words grouped by difficulty, incorporating the option for users to select whcih group they are served words from. 
+- Consider options to restart the game upon completion or to quit and restart midway through a game. 
 - Explore options around storing highest score against username. 
 
 ## Testing 
