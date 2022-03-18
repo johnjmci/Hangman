@@ -64,25 +64,34 @@ A letter contained witin the mystery word.
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+User testing was completed by mysel as well as a pool of friends who played the game and have feedback on any errors, quirks of issues that they experienced during the course of play. Key issues adressed:
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
+1. Function of being able to press any key to begin not functioning correctly -> Replaced with function of press Enter to start game.
+2. Entering a invalid character found to be costing users a life -> Updated logic of game so that invalid characters were not to be counted as incorrect answers. 
+3. Letter entered after in the turn after aninvalid character is entered not being recorded as a guess -> Update order of code to prevent rectify this issue.
+4. Not all input functions displaying the users input in uppercase, only the initial prompt to input a letter and not those following invalid or repeated guessed -> .upper action added to remaining input instances. 
+5. Some errors and typos in instructional code also flagged and corrected.
 
 ### Validator Testing 
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+- Python
+Code tested using the PEP 8 online code checker http://pep8online.com/
+61 issues were found, described as:
+"blank line contains whitespace"
+"block comment should start with '# '"
+"indentation is not a multiple of four (comment)"
+"line too long (100 > 79 characters)"
+"missing whitespace after ','"
+"module level import not at top of file"
+"too many blank lines (2)"
+"too many leading '#' for block comment"
+"trailing whitespace"
+
+All errors and issues flagged by PEP 8 have been resolved. 
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+No unfixed bugs remain in code at time of submission. 
 
 ## Deployment
 
@@ -95,20 +104,13 @@ This section should describe the process you went through to deploy the project 
 
 The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
 
-
-## Credits 
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
+### Credits: Content 
 
 - The text for the Home page was taken from Wikipedia Article A
 - Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-### Media
+### Credits: Media
 
 - The photos used on the home and sign up page are from This Open Source site
 - The images used for the gallery page were taken from this other open source site
@@ -116,7 +118,7 @@ You can break the credits section up into Content and Media, depending on what y
 
 Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
 
-## Other General Project Advice
+## Credits: Other General Project Advice
 
 Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
 
