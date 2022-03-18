@@ -50,12 +50,6 @@ A letter contained witin the mystery word.
 
   - In both instances, the player is served a feedback message and graphic informing them of their results. 
 
-- __Graphics__
-
-
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
-
-
 ### Future Expansion & Build
 
 - Another feature idea
@@ -89,7 +83,8 @@ Code tested using the PEP 8 online code checker http://pep8online.com/
 "too many leading '#' for block comment"
 "trailing whitespace"
 
-All errors and issues flagged by PEP 8 have been resolved. 
+All errors and issues flagged by PEP 8 have been resolved.
+<img width="982" alt="pep_code_check_final" src="https://user-images.githubusercontent.com/92268504/159061433-5ebb5709-018e-4532-a989-2fbf20af353d.png">
 
 ### Unfixed Bugs
 
