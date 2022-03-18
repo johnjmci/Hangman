@@ -41,6 +41,9 @@ invalid_characters = []
 
 """
 Base code to run so long as the game active ie the player still has lives remaining.
+Animations included to display based on the number of wrong answers reveived.
+Actions dealing with input answers from player. Checking if answer is a valid character and correct answer.
+Results message. Triggered when no lives remain and feedback to player whether they have won or lost. 
 """
 
 while wrong_answers < NUMBER_OF_LIVES:
@@ -51,10 +54,7 @@ while wrong_answers < NUMBER_OF_LIVES:
 
         user_guess = input('--> 1 Input a letter and press enter...\n').upper()
 
-"""
-Animations included to display based on the number of wrong answers reveived.
 
-"""
         if wrong_answers == 6:
                         print("""
       _______
@@ -146,10 +146,6 @@ Animations included to display based on the number of wrong answers reveived.
  
  
 """)
-
-"""
-Actions dealing with input answers from player. Checking if answer is a valid character and correct answer.
-"""
  
         while user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already made that guess, please try again.')
@@ -185,9 +181,7 @@ Display showing the user the make-up of the mystery word, which letters they hav
        
         print()
         
-"""
-Results message. Triggered when no lives remain and feedback to player whether they have won or lost. 
-"""
+
         if len(guessed_letters) == len(mystery_letters):
                 print("""
 __      _____ _  _ _  _ ___ ___ _ 
