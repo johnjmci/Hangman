@@ -140,15 +140,19 @@ while wrong_answers < NUMBER_OF_LIVES:
 
  
         user_guess = input('--> Enter a letter and press enter...\n').upper()
+
         if user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already made that guess, please try again.')
-                user_guess = input('--> Enter a letter and press enter...\n')
+        
+        user_guess = input('--> Enter a letter and press enter...\n').upper()
 
         if user_guess not in alphabet:
                 print('Invalid character entered!')
-                user_guess = input('--> Please enter a leter from a to z...\n')
         
-        if user_guess not in mystery_letters:
+        user_guess = input('--> Please enter a leter from a to z...\n').upper()
+
+
+        if user_guess not in mystery_letters or guessed_letters:
                 wrong_answers += 1
                 wrong_letters.append(user_guess)
         print()
