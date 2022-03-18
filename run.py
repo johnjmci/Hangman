@@ -44,6 +44,7 @@ Base code to run so long as the game active ie the player still has lives remain
 Animations included to display based on the number of wrong answers reveived.
 Actions dealing with input answers from player. Checking if answer is a valid character and correct answer.
 Results message. Triggered when no lives remain and feedback to player whether they have won or lost. 
+Display showing the user the make-up of the mystery word, which letters they have guessed and which remain.
 """
 
 while wrong_answers < NUMBER_OF_LIVES:
@@ -160,12 +161,8 @@ while wrong_answers < NUMBER_OF_LIVES:
         if user_guess not in alphabet:
                 print('Invalid character entered!')
                 user_guess = input('--> 3 Enter a letter a to z...\n').upper()
-        
-
-"""
-Display showing the user the make-up of the mystery word, which letters they have guessed and which remain.
-"""             
         print()
+
         print('MYSTERY Word is ', end='')
         print()
 
