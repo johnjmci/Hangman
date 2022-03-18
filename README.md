@@ -1,5 +1,7 @@
 # HANGMAN
 
+LIVE APP LINK - https://six-hangman.herokuapp.com/ 
+
 This project set out to build a version of the well-known word game, hangman. The game aims to provide a fun challenge aimed at an adult audience based on the variety and lebgth of words. Users should find enjoyment in completing the challenge of the game and it also provides the opportunities for users to build their vocabulary or English language knowledge. 
 
 - __Design__
@@ -97,12 +99,20 @@ No unfixed bugs remain in code at time of submission.
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+- This game was built using Github, utilising Python and deployed via Heroku with a moch terminal accessible via a webpage. The steps for deployment are as follows: 
+  1. Add a new line at the end of code requesting input. This is to accomodate a quirk in the software used tocreate the mock terminal.  
+  2. Add list of dependencies to requirements.txt file using code "Pip3 freeze > requirements.txt" in the terminal 
+  3. Commit these changes and push to Github
+  4. Utilising a Heroku account, navigate to the option of "Create a new app" from the main menu 
+  5. Name app with a unique name and confirm geographical region -> Select create app
+  6. Within the Setting section, update a new key with name "PORT" and value of "8000"
+  7. Within settings, add Python and nodejs build packs in this order
+  8.  Within the Deploy section, selectGithub and confirm connection between your Github and Heroku accounts
+  9.  Search for the repository name, in the case of this project, it is "johnjmci/Hangman" -> Select Connect 
+  10.  Regarding deploy method, I have chosen to select the option of Automatic deploys
+  11.  App willbe built and link to view app will be presented below the build section in button labelled "View" 
+  
+The live link can be found here - https://six-hangman.herokuapp.com/
 
 ### Credits: Content 
 
@@ -116,7 +126,11 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 - The images used for the gallery page were taken from this other open source site
 
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
+### Technologies & Other Resources
+- Heroku https://dashboard.heroku.com/
+- Github https://github.com/johnjmci
+- Hangman ASCII Art https://ascii.co.uk/art/hangman 
+- ASCII Generator http://www.network-science.de/ascii/ 
 
 ## Credits: Other General Project Advice
 
