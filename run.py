@@ -34,16 +34,19 @@ alphabet = set(string.ascii_uppercase)
 mystery_word = random.choice(possible_words)
 mystery_letters = list(mystery_word)
 wrong_letters = []
+invalid_characters = []
 
 
 # Display word skeleton and empty gallowes, request first letter guess
 
 
 while wrong_answers < NUMBER_OF_LIVES:
-        print('* Incorrect answers so far: ', end='')
+        print('* Incorrect answers so far: \n', end='')
         for letter in wrong_letters:
                 print('{}, '.format(letter), end='')
-        print('* Lives remaining: {}'.format(NUMBER_OF_LIVES - wrong_answers))
+        print('* Lives remaining: {}\n'.format(NUMBER_OF_LIVES - wrong_answers))
+
+        user_guess = input('--> 1 Input a letter and press enter...\n').upper()
 
 
         if wrong_answers == 6:
@@ -139,28 +142,30 @@ while wrong_answers < NUMBER_OF_LIVES:
 """)
 
  
-        user_guess = input('--> Input a letter and press enter...\n').upper()
+       
 
-        if user_guess in guessed_letters or user_guess in wrong_letters:
+
+        while user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already made that guess, please try again.')
+                user_guess = input('--> 2 Input a letter and press enter...\n').upper()
 
-        user_guess = input('--> Input a letter and press enter...\n').upper()
+
+        if user_guess in alphabet and user_guess not in mystery_letters:
+                wrong_answers += 1
+                wrong_letters.append(user_guess)
 
 
         if user_guess not in alphabet:
                 print('Invalid character entered!')
+                user_guess = input('--> 3 Enter a letter a to z...\n').upper()
         
-        user_guess = input('--> Please enter a leter from a to z...\n').upper()
-        
-        if user_guess not in mystery_letters:
-                wrong_letters.append(user_guess)
-
-        if user_guess not in mystery_letters or guessed_letters:
-                wrong_answers += 1
+       
                        
         print()
         print('MYSTERY Word is ', end='')
         print()
+## to check wheher next line still needed
+
 
         for letter in mystery_letters:
                 if user_guess == letter:
@@ -172,8 +177,13 @@ while wrong_answers < NUMBER_OF_LIVES:
                 else:
                         print('_ ', end='')
 
+
+       
+       
+       
         print()
         
+## will it add multiple times and throw off length of list
 
         if len(guessed_letters) == len(mystery_letters):
                 print("""
