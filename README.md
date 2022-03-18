@@ -13,7 +13,6 @@ This includes mapping of:
 ![hangman_design_flow](https://user-images.githubusercontent.com/92268504/159022155-b9448577-6597-4259-9d2e-7bd7a1ed5b18.png)
 
 
-
 ## Features 
 
 The game is intentionally simple in design. The project has been completed using Python, with focus on creating code and logic which successfully deals with player input. 
@@ -22,17 +21,21 @@ The game is intentionally simple in design. The project has been completed using
 
 - __Welcome & Instruction__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Players are welcomed with a brief description of how to play the game. Hangman is a well-known game, so explanation has be kept minimal. Hangman can be played with words of varying length, however, this version of the game serves up words of six letters in length. A list of 492 letters being utilised has been sourced from freedictionary.com. 
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
+<img width="800" alt="play_screen_open" src="https://user-images.githubusercontent.com/92268504/159028652-263e3326-8314-4753-83cd-74041f47e2be.png">
+HanHangman 
+  - In order to personalise the experience of the game to a degree, players are asked for and then greeted by their first name. 
+ <img width="798" alt="play_screen_begin " src="https://user-images.githubusercontent.com/92268504/159028866-2ba822eb-5b3e-4387-b199-9b01a41634bb.png">
+ 
 - __Game Play__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - The main action requested of players is to guess a letter to check if it is contained in the mystery word selected by the computer. Guesses are evaluated to check if the input is:
+A valid character it ie a letter from a to z.
+A letter which hasn'r been previously guessed. 
+A letter contained witin the mystery word. 
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+<img width="784" alt="play_sreen_check" src="https://user-images.githubusercontent.com/92268504/159029274-10c84111-4fc0-422d-b790-6f8f67285e1b.png">
 
 - __Results__
 
