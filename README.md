@@ -39,8 +39,14 @@ A letter contained witin the mystery word.
 
 - __Results__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - The game is coded to monitor how many wrong answers a player has accumulated and will trigger feedback to the player as t whether they have won or lost the game. 
+  - Should the number of wrong answers equal to the number of lives in the game then the player has run out of lives and has lost the game.
+  <img width="794" alt="play_screen_lose" src="https://user-images.githubusercontent.com/92268504/159038314-340af241-af6e-4584-b4f4-8fa24887534b.png">
+
+  - Once the number of correct letters is equal to the number of letters in the mystery word, this means that the complete word has been guessed and the player has won.   
+ <img width="783" alt="play_screen_winner" src="https://user-images.githubusercontent.com/92268504/159038360-5b83c57d-69ef-4310-80d6-1aa786d234f6.png">
+
+  - In both instances, the player is served a feedback message and graphic informing them of their results. 
 
 - __Graphics__
 
@@ -51,6 +57,10 @@ A letter contained witin the mystery word.
 ### Future Expansion & Build
 
 - Another feature idea
+- new word packs
+- difficulty
+- new game
+- leader board 
 
 ## Testing 
 
