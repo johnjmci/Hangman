@@ -23,7 +23,7 @@ print()
 print('Hi',username, '. Good luck playing hangman!')
 print()
 
-input('Press any key to continue.\n')
+input('Press Enter to continue.')
 print()
 
 possible_words = possible_words
