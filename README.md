@@ -1,9 +1,6 @@
 # HANGMAN
 
- _  _   _   _  _  ___ __  __   _   _  _ 
-| || | /_\ | \| |/ __|  \/  | /_\ | \| |
-| __ |/ _ \| .` | (_ | |\/| |/ _ \| .` |
-|_||_/_/ \_\_|\_|\___|_|  |_/_/ \_\_|\_|
+<img width="316" alt="Screenshot 2022-03-18 at 13 34 58" src="https://user-images.githubusercontent.com/92268504/159012516-6b97342b-ac1a-4fca-a1b9-4fe6d6ab7bd1.png">
 
 
 In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
