@@ -1,10 +1,18 @@
 # HANGMAN
 
-<img width="316" alt="Screenshot 2022-03-18 at 13 34 58" src="https://user-images.githubusercontent.com/92268504/159012516-6b97342b-ac1a-4fca-a1b9-4fe6d6ab7bd1.png">
-
 This project set out to build a version of the well-known word game, hangman. The game aims to provide a fun challenge aimed at an adult audience based on the variety and lebgth of words. Users should find enjoyment in completing the challenge of the game and it also provides the opportunities for users to build their vocabulary or English language knowledge. 
 
-<img width="800" alt="play_screen_open" src="https://user-images.githubusercontent.com/92268504/159019101-a6fd3427-193e-4ba1-aa74-224fea119d35.png">
+- __Design__
+Planning and design of the game was aided by using Lucidchart. The below visual lays out the user journey and logic flow behind which informed the structure and code utilised in the build of the game. 
+This includes mapping of:
+- Instructions and other information to be conveyed to players.
+- Requests for user input in order to progress game.
+- Instances where input needs to be evaluated for validity. 
+- Evaluation ot input and decisions on game progression or feedback to players. 
+
+![hangman_design_flow](https://user-images.githubusercontent.com/92268504/159022155-b9448577-6597-4259-9d2e-7bd7a1ed5b18.png)
+
+
 
 ## Features 
 
@@ -30,6 +38,9 @@ The game is intentionally simple in design. The project has been completed using
 
   - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
   - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+
+- __Graphics__
+
 
 ![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
 
