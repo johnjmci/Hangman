@@ -18,7 +18,7 @@ print('In this game, you have 7 lives and all words have 6 letters.')
 print()
 username = input('Plesae enter your first name.\n').upper()
 print()
-print('Hi', username, '. Good luck!')
+print('Hi', username,'. Good luck!')
 print()
 
 input('Press Enter to continue.')
@@ -55,7 +55,7 @@ while wrong_answers < NUMBER_OF_LIVES:
         print('* Lives remaining: {}\n'.format(
                 NUMBER_OF_LIVES - wrong_answers))
 
-        user_guess = input('--> Input a letter and press enter.\n').upper()
+        user_guess = input('-> Input a letter and press enter.\n').upper()
 
         if wrong_answers == 6:
                 print("""
@@ -151,12 +151,12 @@ while wrong_answers < NUMBER_OF_LIVES:
 
         while user_guess in guessed_letters or user_guess in wrong_letters:
                 print('You already guessed that, try again.')
-                user_guess = input('Input a letter and press enter.\n').upper()
+                user_guess = input('-> Input a letter and press enter.\n').upper()
 
         if user_guess not in alphabet:
                         wrong_letters.append(user_guess)
                         print('Invalid character entered!')
-                        user_guess = input('Enter a letter a to z.\n').upper()
+                        user_guess = input('-> Enter a letter a to z.\n').upper()
 
         if user_guess in alphabet and user_guess not in mystery_letters:
                 wrong_answers += 1
@@ -164,7 +164,7 @@ while wrong_answers < NUMBER_OF_LIVES:
 
         print()
 
-        print('MYSTERY Word is ', end='')
+        print('MYSTERY WORD = ', end='')
         print()
 
         for letter in mystery_letters:
@@ -186,7 +186,7 @@ __      _____ _  _ _  _ ___ ___ _
  \ \/\/ / | || .` | .` | _||   /_|
   \_/\_/ |___|_|\_|_|\_|___|_|_(_)
                 """)
-                print("You have won, well done!")
+                print('You have won, well done!')
                 break
 
 
